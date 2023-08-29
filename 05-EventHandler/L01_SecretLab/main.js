@@ -8,14 +8,16 @@ const Mosquito = () => {
             setPosition({ x: newX, y: newY });
             setIsDead(false);
         };
-        const interval = setInterval(updatePosition, 500);
+        const interval = setInterval(updatePosition, 5000);
         return () => {
-            clearInterval(interval);
+            clearInterval(interval) ;
         };
     }, []);
-
+    //  IMG = ยุง
+    const hitMos = () => alert("dead");
     return (
         <img
+        onClick={hitMos}
             src='./mos.jpeg'
             style={{
                 position: 'absolute',

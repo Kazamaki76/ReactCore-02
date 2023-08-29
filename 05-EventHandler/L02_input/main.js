@@ -1,4 +1,16 @@
 // ReactDOM
+function App () {
+    
+    const handleChange = function (event) {
+        console.log(event)
+        // console.log
+    }
+    
+    return <button onChange={handleChange}> <input/>
+    </button>
+
+}
+
 const domRoot = document.getElementById('root');
 const root = ReactDOM.createRoot(domRoot);
-root.render(<h1>Hello React</h1>);
+root.render(<App/>);

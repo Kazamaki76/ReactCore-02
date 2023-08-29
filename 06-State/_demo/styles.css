@@ -5,7 +5,7 @@
 }
 
 html {
-    font-size: 62.5%; // root 16px * 0.625 == 10px
+    font-size: 62.5%; 
 }
 
 body {
@@ -25,4 +25,23 @@ h1 {
 
 .text-blue {
     color: blue;
+}
+
+.container {
+    background-color: wheat;
+    display: flex;
+    justify-content: center;
+    height: 100vh;
+    align-items: center;
+
+}
+
+.light {
+    background-color: white;
+    color: black;
+}
+
+.dark {
+    background-color: black;
+    color: white;
 }

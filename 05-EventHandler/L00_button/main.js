@@ -1,4 +1,13 @@
 // ReactDOM
+function  App () {
+
+    const handleClick = function() {
+        console.log("clicked");
+        alert("Hi");
+    }
+    return <button onClick={handleClick} >Button</button>;
+}
+
 const domRoot = document.getElementById('root');
 const root = ReactDOM.createRoot(domRoot);
-root.render(<h1>Hello React</h1>);
+root.render(<App/>);
